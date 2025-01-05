@@ -1,0 +1,118 @@
+.game-view-94e563a {
+  display: flex;
+  flex-direction: column;
+}
+
+.board-94e563a {
+  display: grid;
+  grid-template-columns: repeat(8, 40px);
+  grid-template-rows: repeat(8, 40px);
+  gap: 8px;
+  width: fit-content;
+  border: 2px solid;
+  align-self: center;
+  padding: 4px;
+  margin-bottom: 10px;
+}
+
+.tile-94e563a {
+  position: relative;
+}
+
+.tile-capture-94e563a {
+  width: 100%;
+  height: 100%;
+}
+
+.tile-context-menu-94e563a {
+  position: absolute;
+  z-index: 99;
+  background-color: white;
+  top: 18px;
+  left: 18px;
+}
+
+.tile-94e563a.awakening-94e563a {
+  background-color: orangered;
+}
+
+.tile-94e563a.development-94e563a {
+  background-color: purple;
+}
+
+.tile-94e563a.enhance-94e563a {
+  background-color: whitesmoke;
+}
+
+.tile-94e563a.purification-94e563a {
+  background-color: gold;
+}
+
+.tile-94e563a.replicate-94e563a {
+  background-color: blue;
+}
+
+.tile-94e563a.empty-94e563a {
+  background-color: lightgrey;
+}
+
+.tile-94e563a.goal-94e563a {
+  background-color: red;
+}
+
+.tile-94e563a.normal-94e563a {
+  background-color: grey;
+}
+
+.tile-94e563a.past-94e563a {
+  background-color: lightgoldenrodyellow;
+}
+
+.tile-94e563a.current-94e563a {
+  background-color: goldenrod;
+}
+
+.tile-list-94e563a {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.list-option-94e563a {
+  display: flex;
+  flex-direction: row;
+  padding: 4px;
+}
+
+.list-option-94e563a:hover {
+  background-color: lightblue;
+}
+
+.option-icon-94e563a {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+
+.card-hand-94e563a {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-self: center;
+}
+
+.card-wrapper-94e563a {
+  width: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.card-94e563a {
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: larger;
+}
+
+.card-enhanced-94e563a {
+  color: darkorange;
+}
