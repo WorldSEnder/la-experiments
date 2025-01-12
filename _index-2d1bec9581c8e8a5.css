@@ -1,6 +1,17 @@
+.slot-select-94e563a {
+  margin-right: 10px;
+}
+
+.game-box-94e563a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .game-view-94e563a {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .board-94e563a {
@@ -10,7 +21,6 @@
   gap: 8px;
   width: fit-content;
   border: 2px solid;
-  align-self: center;
   padding: 4px;
   margin-bottom: 10px;
 }
@@ -98,7 +108,6 @@
   display: flex;
   flex-direction: row;
   gap: 8px;
-  align-self: center;
 }
 
 .card-wrapper-94e563a {
@@ -115,4 +124,12 @@
 
 .card-enhanced-94e563a {
   color: darkorange;
+}
+
+.enhancement-control-94e563a {
+  align-self: flex-start;
+}
+
+.manipulator-wrap-94e563a {
+  margin: 0 5px;
 }
