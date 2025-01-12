@@ -133,3 +133,16 @@
 .manipulator-wrap-94e563a {
   margin: 0 5px;
 }
+
+.recommend-reset-94e563a {
+  font-size: larger;
+  color: red;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.recommend-tap-94e563a {
+  color: green;
+  font-size: larger;
+  text-transform: uppercase;
+}
