@@ -1,3 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap");
+body {
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 90;
+}
+
+input[type=button], button {
+  font-family: "Roboto", serif;
+}
+
 .slot-select-94e563a {
   margin-right: 10px;
 }
@@ -129,8 +142,16 @@
 .enhancement-control-94e563a {
   align-self: flex-start;
 }
+.enhancement-control-94e563a button {
+  margin: 0 5px;
+}
 
 .manipulator-wrap-94e563a {
+  margin: 0 5px;
+}
+.manipulator-wrap-94e563a button {
+  font-size: larger;
+  width: 2em;
   margin: 0 5px;
 }
 
