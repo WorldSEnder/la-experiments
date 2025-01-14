@@ -76,8 +76,12 @@ button {
   margin: 0.25rem 0 0.69rem;
 }
 
-button:focus, button:hover, button:active {
+button:hover {
   background-color: var(--background-color-highlight);
+}
+
+button:active {
+  background-color: var(--placeholder-color);
 }
 
 button:disabled, button[disabled] {
