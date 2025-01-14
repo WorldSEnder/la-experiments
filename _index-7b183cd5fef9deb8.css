@@ -51,12 +51,15 @@ input[type=button], button {
 
 .tile-94e563a.interactive-94e563a:hover {
   outline: thin solid blue;
-  cursor: context-menu;
 }
 
 .tile-capture-94e563a {
   width: 100%;
   height: 100%;
+}
+
+.tile-94e563a.interactive-94e563a .tile-capture-94e563a:hover {
+  cursor: context-menu;
 }
 
 .tile-context-menu-94e563a {
