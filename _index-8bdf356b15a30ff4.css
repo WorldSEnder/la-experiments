@@ -1,9 +1,58 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap");
+/* Some css reset*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/* Color palette */
 :root {
   --background-color-triple: 250, 250, 250;
   --background-color: rgb(var(--background-color-triple));
-  --background-darkened: #f3f3f3;
-  --border-color: black;
+  --background-color-secondary: #f3f3f3;
+  --background-color-highlight: #C7C7CC;
+  --label-color: #000000;
+  --label-color-secondary: rgba(0.24, 0.24, 0.26, 0.6);
+  --placeholder-color: rgba(0.24, 0.24, 0.26, 0.3);
+  --separator-color: rgba(0.24, 0.24, 0.26, 0.29);
+  --focus-background-color: lightblue;
+  --system-color-affirmative: #34C759;
+  --system-color-deny: #FF3B30;
+  --outline-color: #007AFF;
+  --border-color: #222;
+  --board-background-color: white;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color-triple: 28, 28, 30;
+    --background-color-secondary: #2C2C2E;
+    --background-color-highlight: #48484A;
+    --label-color: #FFFFFF;
+    --label-color-secondary: rgba(0.92, 0.92, 0.96, 0.6);
+    --placeholder-color: rgba(0.92, 0.92, 0.96, 0.3);
+    --separator-color: rgba(0.33, 0.33, 0.35, 0.6);
+    --focus-background-color: lightblue;
+    --system-color-affirmative: #30D158;
+    --system-color-deny: #FF453A;
+    --outline-color: #0A84FF;
+    --border-color: #8E8E93;
+    --border-highlight-color: #8E8E93;
+  }
 }
 
 body {
@@ -12,10 +61,21 @@ body {
   font-weight: 400;
   font-style: normal;
   font-variation-settings: "wdth" 90;
+  background-color: var(--background-color);
+  color: var(--label-color);
 }
 
-input[type=button], button {
-  font-family: "Roboto", serif;
+button {
+  background-color: var(--background-color-secondary);
+  color: var(--label-color);
+  border: 1px solid var(--border-color);
+  border-radius: 0.25rem;
+  padding: 0.22rem 0.1rem;
+  margin: 0.25rem 0 0.69rem;
+}
+
+button:focus, button:hover, button:active {
+  background-color: var(--background-color-highlight);
 }
 
 .slot-select-94e563a {
@@ -40,9 +100,11 @@ input[type=button], button {
   grid-template-rows: repeat(8, 40px);
   gap: 8px;
   width: fit-content;
-  border: 2px solid;
+  border: 4px solid var(--border-color);
+  border-radius: 4px;
   padding: 4px;
   margin-bottom: 10px;
+  background: var(--board-background-color);
 }
 
 .tile-94e563a {
@@ -50,7 +112,7 @@ input[type=button], button {
 }
 
 .tile-94e563a.interactive-94e563a:hover {
-  outline: thin solid blue;
+  outline: thin solid var(--outline-color);
 }
 
 .tile-capture-94e563a {
@@ -122,7 +184,7 @@ input[type=button], button {
 }
 
 .list-option-94e563a:hover {
-  background-color: lightblue;
+  background-color: var(--focus-background-color);
 }
 
 .option-icon-94e563a {
@@ -145,7 +207,7 @@ input[type=button], button {
 }
 
 .card-94e563a {
-  border: 1px solid black;
+  border: 1px solid var(--border-color);
   border-radius: 5px;
   font-size: larger;
 }
@@ -172,13 +234,13 @@ input[type=button], button {
 
 .recommend-reset-94e563a {
   font-size: larger;
-  color: red;
+  color: var(--system-color-deny);
   font-weight: bold;
   text-transform: uppercase;
 }
 
 .recommend-tap-94e563a {
-  color: green;
+  color: var(--system-color-affirmative);
   font-size: larger;
   text-transform: uppercase;
 }
@@ -218,10 +280,10 @@ input[type=button], button {
   padding: 12px 15px;
 }
 .stats-table-94e563a tbody tr {
-  border-top: thin solid #dddddd;
+  border-top: thin solid var(--separator-color);
 }
 .stats-table-94e563a tbody tr:nth-of-type(even) {
-  background-color: var(--background-darkened);
+  background-color: var(--background-color-secondary);
 }
 
 .info-button-94e563a {
