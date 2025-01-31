@@ -143,31 +143,31 @@ button:disabled, button[disabled] {
 }
 
 .tile-94e563a.awakening-94e563a {
-  background-color: orangered;
+  background-color: #d6715a;
 }
 
 .tile-94e563a.development-94e563a {
-  background-color: purple;
+  background-color: #d46dd4;
 }
 
 .tile-94e563a.enhance-94e563a {
-  background-color: whitesmoke;
+  background-color: #dce6e6;
 }
 
 .tile-94e563a.purification-94e563a {
-  background-color: gold;
+  background-color: #eeda42;
 }
 
 .tile-94e563a.replicate-94e563a {
-  background-color: blue;
+  background-color: #5e86cc;
 }
 
 .tile-94e563a.empty-94e563a {
-  background-color: lightgrey;
+  background-color: rgba(211, 211, 211, 0.2);
 }
 
 .tile-94e563a.goal-94e563a {
-  background-color: red;
+  background-color: #c55d93;
 }
 
 .tile-94e563a.normal-94e563a {
@@ -179,7 +179,7 @@ button:disabled, button[disabled] {
 }
 
 .tile-94e563a.current-94e563a {
-  background-color: goldenrod;
+  background-color: #dfd476;
 }
 
 .tile-list-94e563a {
