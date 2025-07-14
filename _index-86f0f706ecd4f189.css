@@ -229,7 +229,7 @@ button:disabled, button[disabled] {
 }
 
 .enhancement-control-94e563a {
-  align-self: flex-start;
+  align-self: stretch;
 }
 .enhancement-control-94e563a button {
   margin: 0 5px;
